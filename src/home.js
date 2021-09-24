@@ -1,4 +1,4 @@
-function createHome() {
+function crearHome() {
     const home = document.createElement("div");
     home.classList.add("home");
 
@@ -6,24 +6,24 @@ function createHome() {
     placeImage.src = "/dist/img/home1.jpg";
     placeImage.alt = "Restaurante";
 
-    home.appendChild(createParagraph("El mejor restaurante del país"));
-    home.appendChild(createParagraph("Cocinando con pasión desde 2002"));
+    home.appendChild(crearParrafo("El mejor restaurante del país"));
+    home.appendChild(crearParrafo("Cocinando con pasión desde 2002"));
     home.appendChild(placeImage);
-    home.appendChild(createParagraph("Pedi online o visitanos!"));
+    home.appendChild(crearParrafo("Pedi online o visitanos!"));
 
     return home;
 }
 
-function createParagraph(text) {
-    const paragraph = document.createElement("p");
-    paragraph.textContent = text;
-    return paragraph;
+function crearParrafo(text) {
+    const parrafo = document.createElement("p");
+    parrafo.textContent = text;
+    return parrafo;
 }
 
-function loadHome() {
+function cargarHome() {
     const main = document.getElementById("main");
     main.textContent = "";
-    main.appendChild(createHome());
+    main.appendChild(crearHome());
 }
 
-export default loadHome;
+export default cargarHome;
