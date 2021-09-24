@@ -3,7 +3,7 @@ function crearHome() {
     home.classList.add("home");
 
     const placeImage = document.createElement("img");
-    placeImage.src = "/dist/img/home2.jpg";
+    placeImage.src = "img/home2.jpg";
     placeImage.alt = "Restaurante";
 
     home.appendChild(crearParrafo("El mejor restaurante del país"));
