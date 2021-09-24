@@ -9,7 +9,7 @@ function crearContacto() {
     direccion.textContent = 'Mariano Acosta 153, Monte Grande, Buenos Aires';
 
     const direccionFoto = document.createElement('img');
-    direccionFoto.src = './dist/img/direccion.png';
+    direccionFoto.src = 'img/direccion.png';
     direccionFoto.alt = 'Restaurante L direccion Google Maps';
 
     contact.appendChild(numeroTelefono);
